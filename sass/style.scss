@@ -1,0 +1,53 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    .grayscale {
+        filter: grayscale(100%);
+    }
+    .panel {
+        display: flex;
+        flex: 1;
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        transition: all linear 0.3s;
+        &:hover h1 {
+            display: flex;
+        }
+        h1 {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            color: #fff;
+            font-size: 4em;
+            font-family: 'Lora';
+            text-shadow: 1px 1px 2px #000;
+            transition: all linear 1s;
+        }
+    }
+    .open {
+        flex: 3;
+    }
+    .we {
+        //background-color:#C8102E;
+        background-image: url(../img/anf.jpeg);
+    }
+    .are {
+        //background-color: #989898;
+        background-image: url(../img/lineup.jpg);
+    }
+    .liverpool {
+        //background-color: #00B2A9;
+        background-image: url(../img/livbird.jpeg);
+        background-position: center;
+    }
+}
